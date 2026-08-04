@@ -1,2 +1,2 @@
-# unlock-plasma-vault-on-launch.desktop
+# unlock-plasma-vault-on-launch
 A simple KDE Plasma Vault wrapper that prompts you to unlock the vault before launching an application, and locks it once the application closes.

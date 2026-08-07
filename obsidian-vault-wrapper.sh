@@ -25,7 +25,7 @@ if [[ "$VAULT_PATH" == "CHANGE ME" || "$MOUNT_PATH" == "CHANGE ME" ]]; then
     exit 1
 fi
 
-QDBUS_BIN=$(command -v qdbus-qt6 || command -v qdbus)
+QDBUS_BIN=$(command -v qdbus6 || command -v qdbus || command -v qdbus-qt6)
 if [[ -z "$QDBUS_BIN" ]]; then
     echo -e "${RED}❌ Error: 'qdbus' tool missing. Ensure KDE Plasma tools are installed.${NC}"
     exit 1
